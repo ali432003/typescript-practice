@@ -18,4 +18,6 @@ function NothingRet(errMsg : string):void {
     console.log("nothing is returned")
 }
 
-NothingRet("haha")
+function handleError(errMsg : string) : never {    // it never return any thing best practice
+    throw new Error(errMsg)
+}
